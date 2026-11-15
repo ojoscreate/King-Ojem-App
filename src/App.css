@@ -62,13 +62,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  min-width: 35%;
+  width: 35%;
   padding: 5px;
   @media (max-width: 720px) {
-    min-width: 50%;
+    width: 50%;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 45%;
+    width: 45%;
   }
 }
 .nav-link li {
@@ -91,8 +91,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 1px;
-  min-width: 1px;
+  height: 1px;
+  width: 1px;
   pointer-events: none;
 } */
 .nav-link.nav-veiw li {
@@ -160,21 +160,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 20px;
-    min-height: 15px;
+    width: 20px;
+    height: 15px;
     padding-inline-end: 5%;
   }
   .hamburger-line {
-    min-width: 100%;
-    min-height: 2px;
+    width: 100%;
+    height: 2px;
     background-color: #f6f6f6;
   }
   .hamburger-links.nav-veiw {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100dvh;
+    width: 100%;
+    height: 100dvh;
     background-color: rgba(0, 0, 0, 0.864);
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@
   .cancel-lines.nav-scrolled {
     color: #f6f6f6;
     margin-right: -100px;
-    min-width: auto;
+    width: auto;
   }
   .cancel-line {
     color: #f6f6f6;
@@ -411,16 +411,16 @@
   margin: 0 auto;
   cursor: pointer;
   @media (max-width: 720px) {
-    min-width: 200px;
-    min-height: 50vw;
+    width: 200px;
+    height: 50vw;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 250px;
-    min-height: 30vw;
+    width: 250px;
+    height: 30vw;
   }
 }
 .album_display:hover {
-  /* min-width: 100%; */
+  /* width: 100%; */
   /* background-image: url(./assets/images/vinyl.jpg); */
   background-size: cover;
   background-position: center;
@@ -494,7 +494,7 @@
 .slider-video,
 .slide-image {
   width: 100%;
-  /* min-height: clamp(60%, 78%, 90%); */
+  /* height: clamp(60%, 78%, 90%); */
   height: 90%;
   object-fit: cover;
   display: block;
@@ -527,7 +527,7 @@ button.next {
   right: 0;
 }
 /* .slider-btn {
-  min-height: 2000px !important;
+   height: 2000px !important;
 } */
 
 /* ======== News / Marqueee ===================*/
@@ -536,10 +536,10 @@ button.next {
   width: 550px;
   margin: auto;
   @media (max-width: 720px) {
-    min-width: 100%;
+    width: 100%;
   }
   /* @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 40px;
+   width: 40px;
     margin: auto;
   } */
 }
@@ -555,7 +555,7 @@ button.next {
   margin-top: -26px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-  /* min-width: 80%; */
+  /* width: 80%; */
   height: 10dvw;
   @media (max-width: 720px) {
     width: fit-content;
@@ -601,8 +601,8 @@ button.next {
     border-radius: 10px;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 150px;
-    min-height: 10dvw;
+    width: 150px;
+    height: 10dvw;
     border-radius: 15px;
   }
 }
