@@ -132,7 +132,7 @@
     font-size: 10px;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    font-size: 18x;
+    font-size: 18px;
   }
 }
 .hamburger {
@@ -248,8 +248,8 @@
   /* position: fixed; */
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100vh;
+  width: 100dvw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
   margin: 0;
@@ -262,7 +262,6 @@
 .fadeInUp {
   animation: fadeInUp 12s ease-in-out infinite;
 }
-
 .video-overlay {
   position: absolute;
   top: 15%;
@@ -276,11 +275,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  width: 100%;
   max-width: 150px;
-  margin-inline-end: 15px;
-  min-height: 50px;
-  padding: 1rem 0.5rem;
+  height: 50px;
+  padding: 0.5rem;
   font-size: xx-small;
   background-color: black;
   border-radius: 1rem;
@@ -291,20 +289,23 @@
     padding: 0.5rem;
   }
   @media (min-width: 725px) and (max-width: 900px) {
-    /* font-size: 4.6rem; */
-    padding: 0.7rem 0.5rem;
+    /* font-size: 2.6rem; */
+    padding: 1rem 0.5rem;
   }
 }
 .overlay-name,
 .overlay-title {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 1%;
   @media (max-width: 720px) {
     /* font-size: 1.75rem; */
     font-size: 12px;
+    line-height: 0.9;
   }
   @media (min-width: 725px) and (max-width: 900px) {
     /* font-size: 4.6rem; */
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 .album_Head {
@@ -313,9 +314,9 @@
 }
 .moment {
   margin: -0.5rem 0 0 -1.8rem;
-  min-width: 8.5rem;
+  width: 8.5rem;
   max-width: 10rem;
-  min-height: 4rem;
+  height: 4rem;
   border-radius: 0.625rem;
   object-fit: cover;
 }
@@ -325,9 +326,9 @@
     top: 12%;
   }
   .video-overlay-content {
-    min-width: 90px;
+    width: 90px;
     max-width: 110px;
-    min-height: 45px;
+    height: 45px;
     line-height: 0.05;
     font-size: 0.55rem;
   }
@@ -336,8 +337,8 @@
   }
   .moment {
     margin: -0.5rem 0 0 -2.7rem;
-    min-width: 6.8rem;
-    min-height: 3.5rem;
+    width: 6.8rem;
+    height: 3.5rem;
   }
 }
 
@@ -350,9 +351,9 @@
   padding: 0.4rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  min-width: 100%;
+  width: 100%;
   /* font-size: 4.6rem; */
-  font-size: 12rem;
+  font-size: 7rem;
   text-transform: uppercase;
   vertical-align: baseline;
   /* padding: 0; */
@@ -366,18 +367,19 @@
   @media (max-width: 720px) {
     font-size: 1.75rem;
     top: 87%;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 2px;
   }
   @media (min-width: 725px) and (max-width: 900px) {
-    font-size: 7dvw;
+    font-size: 6rem;
     top: 88%;
     padding: 0;
     margin: 0;
   }
 }
 
-/* album container */
+/*------------ album container ----------------*/
+
 .music_container {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -388,14 +390,14 @@
   gap: 0.2rem;
   align-items: center;
   justify-content: space-evenly;
-  min-width: fit-content;
-  min-height: fit-content;
+  width: fit-content;
+  height: fit-content;
   margin: 1rem auto 3rem;
   padding: 1%;
 }
 .album_display {
-  min-width: 400px;
-  min-height: 18vw;
+  width: 400px;
+  height: 18dvw;
   /* background-image: url(./assets/images/cassette\ image.jpg); */
   background-size: scale-down;
   background-position: center;
@@ -430,24 +432,26 @@
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 }
+
 /*========== image slider ========= */
+
 .slider {
   position: relative;
-  min-width: 85%;
+  width: 85%;
   /* max-width: 550px; */
-  min-height: 40vw;
+  height: 40vw;
   margin: 2.5rem auto 1rem;
   overflow: hidden;
   border-radius: 30px;
   padding: 2% 5%;
   box-shadow: rgba(32, 32, 32, 0.4) 0 8px 32px 0;
   @media (max-width: 720px) {
-    min-width: 80%;
-    min-height: 100vw;
+    width: 80%;
+    height: 100vw;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 70%;
-    min-height: 65vw;
+    width: 70%;
+    height: 65vw;
   }
 }
 .slider:hover {
@@ -474,14 +478,14 @@
 } */
 .slides {
   display: none;
-  min-width: 90%;
-  min-height: 90%;
+  width: 90%;
+  height: 90%;
   margin: auto;
   @media (max-width: 720px) {
-    min-width: 70%;
+    width: 70%;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-height: 78%;
+    height: 78%;
   }
 }
 .display-slider {
@@ -489,9 +493,9 @@
 }
 .slider-video,
 .slide-image {
-  min-width: 100%;
+  width: 100%;
   /* min-height: clamp(60%, 78%, 90%); */
-  min-height: 90%;
+  height: 90%;
   object-fit: cover;
   display: block;
   border-radius: 30px;
@@ -529,7 +533,7 @@ button.next {
 /* ======== News / Marqueee ===================*/
 
 .marquee {
-  min-width: 550px;
+  width: 550px;
   margin: auto;
   @media (max-width: 720px) {
     min-width: 100%;
@@ -552,12 +556,13 @@ button.next {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   /* min-width: 80%; */
-  min-height: 10dvw;
+  height: 10dvw;
   @media (max-width: 720px) {
-    min-height: 25dvw;
+    width: fit-content;
+    height: 25dvw;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-height: 15dvw;
+    height: 15dvw;
   }
 }
 .para-news {
@@ -568,7 +573,7 @@ button.next {
   margin: auto 0;
   align-items: center;
   column-width: 90px;
-  min-width: 80%;
+  width: 80%;
   /* column-gap: 10px; */
   text-align: center;
   column-fill: auto;
@@ -583,16 +588,16 @@ button.next {
 }
 
 .img-news {
-  min-width: 200px;
-  min-height: 9dvw;
+  width: 200px;
+  height: 9dvw;
   border-radius: 20px;
   object-fit: cover;
   border: #f5909052 1px solid;
   transition: transform 0.5s ease;
   margin-top: 10px;
   @media (max-width: 720px) {
-    min-width: 120px;
-    min-height: 20dvw;
+    width: 120px;
+    height: 20dvw;
     border-radius: 10px;
   }
   @media (min-width: 720px) and (max-width: 900px) {
@@ -605,18 +610,18 @@ button.next {
 
 .contact-form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  min-width: 40%;
+  width: 40%;
   margin: auto;
   border-radius: 5%;
-  padding: 4%;
+  padding: 5% 4% 2% 4%;
   @media (max-width: 720px) {
-    min-width: 70%;
-    min-height: 100dvh;
+    width: 70%;
+    height: 100dvh;
     padding: 2%;
   }
   @media (min-width: 720px) and (max-width: 900px) {
-    min-width: 70%;
-    min-height: 60dvh;
+    width: 70%;
+    height: 60dvh;
     padding: 2%;
   }
 }
@@ -625,9 +630,9 @@ button.next {
 .cookies {
   font-size: 0.625rem;
   text-align: center;
-  margin: 0.2rem 0;
+  margin: -0.2rem 0;
   padding: 0 0.325rem;
-  line-height: 0.5;
+  line-height: 1.2;
   @media (max-width: 720px) {
     font-size: 0rem;
     margin: 0;
@@ -635,6 +640,6 @@ button.next {
   }
   @media (min-width: 720px) and (max-width: 900px) {
     margin: 0;
-    line-height: 0.6;
+    line-height: 2.6;
   }
 }
